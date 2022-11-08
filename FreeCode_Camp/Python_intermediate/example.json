@@ -1,0 +1,17 @@
+{
+    "firstName": "Josias",
+    "lastName": "Leonardo",
+    "hobbies": ["football", "gym", "movies"],
+    "age": 39,
+    "hasChildren": true,
+    "children": [
+        {
+            "firstName": "Alex",
+            "age": 7
+        },
+        {
+            "firstName": "Bob",
+            "age": 5
+        }
+    ]
+}
