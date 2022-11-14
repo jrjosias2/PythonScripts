@@ -1,7 +1,7 @@
 #Parece simples demais pra ser verdade, pesquisar mais esse exemplo e as principais funcoes
 import json
 
-person = dict(nome="Josias", idade=39, cidade="Sao Paulo", TemFilhos=False, Titulos=["Engenheiro de Dados", "Programador", "Arquiteto de Solucoes"])
+person = dict(nome="Josias", idade=39, cidade="Sao Paulo", TemFilhos=False, Titulos=["Engenheiro de Dados", "GCP", "AWS", "Python", "Arquiteto de Solucoes"])
 print(person.items())
 
 #Python dict to Json
