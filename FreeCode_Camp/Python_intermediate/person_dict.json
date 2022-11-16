@@ -1,0 +1,14 @@
+{
+    "nome": "Josias",
+    "idade": 39,
+    "cidade": "Sao Paulo",
+    "TemFilhos": false,
+    "Titulos": [
+        "Engenheiro de Dados",
+        "AWS",
+        "Python",
+        "Arquiteto de Solucoes",
+        "GCP K8S",
+        "GCP Data Engineer"
+    ]
+}
