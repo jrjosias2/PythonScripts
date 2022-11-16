@@ -48,3 +48,34 @@ reduceList_1 = [1, 2, 3, 4, 5, 6]
 
 product_A = reduce(lambda x,y: x*y, reduceList_1)
 print("Reduce func: ", product_A)
+
+# Nov 16 Teste de sort com nomes em uma lista
+scifi_authors = ['Isaac Asimov', 'Ray Bradbury', 'Robert Heinlein', 'Arthur C. Clarke', 'Douglas Adams', 'Robert Redford']
+print(scifi_authors)
+scifi_authors.sort(key=lambda last_name: last_name.split(" ")[-1].lower())
+print(scifi_authors)
+
+#List comprehension no caso de condicional executar dessa maneira 
+# ou pegar exemplo do notebook Lecture_1 if >> all([col in df.columns for col in list_cols]):
+list_authors = [a for a in scifi_authors if 'Robert' in a]
+print(list_authors)
+
+#Executa operacao
+matrix_num = [(x*2) for x in reduceList_1]
+print('Matrix calculada:\n',matrix_num,'\n','ReduceList:\n',reduceList_1)
+
+#Retorna boleano dentro das condicoes de comparacao da lista
+# Le-se n1 para elementos nesssa matrix, para cada valor dela presente em Reduce List retorne True ou False
+check_nums = [n1 in matrix_num for n1 in reduceList_1]
+print(check_nums)
+
+check_nums_not = [n1 in matrix_num for n1 in reduceList_1]
+print(check_nums_not)
+
+#Retorna os elementos da lista
+# n elementros na matrix, se houver elemento que esteja presente em reduceList retorne o elemento
+check_nums_nr = [n for n in matrix_num if n in reduceList_1]
+print('Elementos da matrix presentes na reduceList', check_nums_nr)
+
+check_nums_not = [n for n in matrix_num if n not in reduceList_1]
+print('Elementos da matrix NAO presentes na reduceList',check_nums_not)

@@ -71,6 +71,7 @@ print("User Encoder", userJSON)
 userDict1 = UserDecoder().decode(userJSON)
 print("User decoder", userDict1)
 
+#Aqui ele tbm nem entra no UserEncoder, porque nao ha necessidade de fazer o Encode do user2, ja que o mesmo é um dict/json format type
 userJSON2 = UserEncoder().encode(user2)
 print("User Encoder 2", userJSON)
 
