@@ -79,3 +79,40 @@ print('Elementos da matrix presentes na reduceList', check_nums_nr)
 
 check_nums_not = [n for n in matrix_num if n not in reduceList_1]
 print('Elementos da matrix NAO presentes na reduceList',check_nums_not)
+
+print(matrix_num.__len__())
+t1 = [i**3 for i in range(1, matrix_num.__len__())]
+print(t1)
+
+filmes_tupples = [
+    ('Citizen Kane', 1941),
+    ('Spirited Away', 2001),
+    ('Wonderful Life', 1946),
+    ('Gattaca', 1997),
+    ('O Aviador', 2004),
+    ('Interestelar', 2014)
+]
+
+print(filmes_tupples)
+pre2k = [titulo for (titulo, ano) in filmes_tupples if ano < 2000]
+print(pre2k)
+
+filmes_dic = {
+        'Citizen Kane' : 1941,
+        'Spirited Away' : 2001,
+        'Wonderful Life' : 1946,
+        'Gattaca' : 1997,
+        'O Aviador' : 2004,
+        'Interestelar' : 2014
+}
+
+print(filmes_dic)
+post2k = [titulos for titulos in filmes_dic.values() if titulos > 2000]
+print(post2k)
+
+post_dic = {t:a for (t, a) in filmes_dic.items() if a > 2000}
+print(post_dic)
+
+#Mais exemplos aqui de como manusear as list comprehension para dicionarios
+dic_nums = {t:i*2 for (t, i) in {'a':2,'b':3,'c':4,'d':5,'e':11}.items() if i%2==0}
+print(dic_nums)
