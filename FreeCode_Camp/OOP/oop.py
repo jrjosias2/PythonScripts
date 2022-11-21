@@ -113,3 +113,5 @@ print(Item.all_items_instance)
 print(Item.all_items_instance[1:3])
 
 print(Item.check_nums(10))
+
+print(Item.check_nums(9.0))
