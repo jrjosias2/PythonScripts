@@ -116,3 +116,9 @@ print(post_dic)
 #Mais exemplos aqui de como manusear as list comprehension para dicionarios
 dic_nums = {t:i*2 for (t, i) in {'a':2,'b':3,'c':4,'d':5,'e':11}.items() if i%2==0}
 print(dic_nums)
+
+#Nao funcionou para atribuir diretamente na lista com uma condicao elif, else ou um if aninhado, pesquisar e voltar para isso em breve.
+dic_nums.update({t:i*2 for (t, i) in {'a':2,'b':3,'c':4,'d':5,'e':11}.items() if i==3})
+print(dic_nums)
+
+ 

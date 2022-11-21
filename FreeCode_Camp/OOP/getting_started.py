@@ -8,7 +8,7 @@ class Item:
     PAY_RATE = 0.8
     all_items_instance = []
 
-    def __init__(self, name: str, price: float, quantity=0) -> None:
+    def __init__(self, name: str, price: float, quantity: int=0) -> None:
         """
         Pesquisar melhor como reforçar o tipo, 
         gerando um erro no momento de passagem dos parametros para os argumentos do metodo
@@ -79,9 +79,12 @@ class Item:
             )
     
     @staticmethod
-    def check_nums(numA, numB):    
+    def check_nums(num) -> bool:    
         #Pesquisar mais sobre as diferenças e melhores casos para obter os melhores recursos entre STATIC e CLASS methods
-        pass
+        if isinstance(num, int):
+            return True
+        else: 
+            return False
         
 """
 Instanciação da classe pelos objetos item1,2,3 e chamada dos metodos
@@ -109,4 +112,4 @@ print('Novo preco com desconto: ', item2.price)
 print(Item.all_items_instance)
 print(Item.all_items_instance[1:3])
 
-Item.instantiate_from_csv()
+print(Item.check_nums(10))
