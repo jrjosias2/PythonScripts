@@ -12,6 +12,7 @@
 #issubset retorna TRUE ou FALSE, se um set tem todos os elementos do segundo entao retorna TRUE, e o issuperset() inverso, importante saber 
 #se todos os elementos de um set existem no outro, para depois pegar a diferenca
 #isdisjoint() so retorna TRUE, se o set comparado tem elementos nao existentes no primeiro
+#https://docs.python.org/2/library/sets.html
 
 myset = {1,2,3,5,7,9,1,3,4,11,10,1,2,8}
 
