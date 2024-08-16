@@ -1,4 +1,4 @@
-#Sets sao criados como dicionarios, mas so permite valores duplicados.
+#Sets sao criados como dicionarios, e também como dicionários não permitem valores duplicados.
 #Existe tambem o frozenset que funciona de maneira imutavel, nao pode ser alterado apos a criacao
 #Funcoes para atualizar, basta usar os metodos, add(), remove(), discard(), clear(), pop()
 
@@ -16,11 +16,11 @@
 
 myset = {1,2,3,5,7,9,1,3,4,11,10,1,2,8}
 
-print(myset)
+print(f"Stdout para validar remoção automática de registros duplicados {myset}")
 
 myset.add(6)
 myset.remove(11)
-print(myset)
+print(f"Stdout apos add o valor 6, e remover o valor 11 {myset}")
 
 for x in myset:
     print(x)
